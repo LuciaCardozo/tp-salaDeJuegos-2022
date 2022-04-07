@@ -1,0 +1,9 @@
+.imgIconHeader{
+    width: 3%; 
+    height: 3%;
+}
+
+.contenedorNavbar{
+    border-radius: 20px;
+    background-color:rgba(241, 117, 0, 0.541);
+}
