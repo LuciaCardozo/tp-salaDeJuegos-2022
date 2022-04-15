@@ -13,6 +13,7 @@ import { TitleDecorationComponent } from './shared/title-decoration/title-decora
 import { ToastComponent } from './shared/toast/toast.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { RegisterComponent } from './component/register/register.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDFS-2rJTcwby8d9K0PY6cw82haLpsfKOQ",
@@ -31,7 +32,8 @@ const firebaseConfig = {
     ErrorComponent,
     TitleDecorationComponent,
     ToastComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

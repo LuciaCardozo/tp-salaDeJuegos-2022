@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataBaseService } from 'src/app/services/dataBase/data-base.service';
 
 @Component({
   selector: 'app-quien-soy',
@@ -13,12 +14,14 @@ export class QuienSoyComponent implements OnInit {
     color:""
     }
   ];
-  email:any;
-  constructor(private router:Router) {
-   
-   }
+  email:string = "name";
+  name?:string;
+  constructor(private router:Router, private database:DataBaseService) { }
 
   ngOnInit(): void {
+    this.email = this.database.emailUsuarioLogeado;
+    this.name = this.email.split('@')[0].charAt(0).toUpperCase()+
+      this.email.split('@')[0].substr(1).toLowerCase();
   }
   onLogout(){
     //this.afAuth.signOut();

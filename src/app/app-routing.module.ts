@@ -4,12 +4,13 @@ import { HomeComponent } from './component/home/home.component';
 import { ErrorComponent } from './component/error/error.component';
 import { RouterModule, Routes } from '@angular/router';
 import { QuienSoyComponent } from './component/quien-soy/quien-soy.component';
+import { RegisterComponent } from './component/register/register.component';
 
 const routes: Routes = [
   {path:"",redirectTo:"login",pathMatch:"full"},
   {path:"login",component:LoginComponent},
   {path:"quienSoy",component:QuienSoyComponent},
-  //{path:"register",component:RegisterComponent},
+  {path:"register",component:RegisterComponent},
   {path:"home",component:HomeComponent},//,canActivate:[AuthGuard]
   {path:'**',component:ErrorComponent}
 ];
