@@ -1,8 +1,20 @@
 <div class="col-12 text-center">
-    <app-navbar
+     <app-navbar
     [icono]="'http://simpleicon.com/wp-content/uploads/rocket.svg'"
     [titulo]="'Home'"
     [botones]="buttons"
-    ></app-navbar>
+    ></app-navbar> 
+    <!-- <div><button></button></div> -->
     <app-title-decoration [title]="title"></app-title-decoration>
+    <div class="divContainerPokemon flexCenterCenter">
+        <div class="divPokemon">
+            <div class="pokemonCard flexCenterCenter" (click)="juegoSeleccionado(juego)" *ngFor="let juego of juegos">
+                <div>
+                    <h3>{{juego.nombre}}</h3>
+                    <img width="200px" [src]="juego.img" alt="img-juego"><br>
+                    <label>juego.descripcion</label><br>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

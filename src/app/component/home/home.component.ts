@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataBaseService } from 'src/app/services/dataBase/data-base.service';
 
 @Component({
@@ -18,9 +19,22 @@ export class HomeComponent implements OnInit {
       color:"red"
     }
   ];
+
+  juegos = [{
+    nombre:"Ahorcado",
+    route:"/juegos/ahorcado",
+    descripcion:"",
+    img:"../../../assets/ahorcado.png"
+  }, {
+    nombre:"Mayor o Menor",
+    route:"/juegos/mayorOMenor",
+    descripcion:"",
+    img:"../../../assets/MayorOMenor.webp"
+  }];
+
   title:string = "";
   email: any;
-  constructor(private database:DataBaseService) { }
+  constructor(private database:DataBaseService, private router:Router) { }
 
   ngOnInit(): void {
     this.email = this.database.emailUsuarioLogeado;
@@ -28,4 +42,7 @@ export class HomeComponent implements OnInit {
     this.email.split('@')[0].substr(1).toLowerCase();
   }
 
+  juegoSeleccionado(juego:any) {
+    this.router.navigate([juego.route]);
+  }
 }

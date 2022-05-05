@@ -14,6 +14,11 @@ import { ToastComponent } from './shared/toast/toast.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { RegisterComponent } from './component/register/register.component';
+import { CommonModule } from '@angular/common';
+import { JuegosRoutingModule } from './juegos/juegos-routing.module';
+import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
+import { MayormenorComponent } from './juegos/mayormenor/mayormenor.component';
+import { ChatComponent } from './shared/chat/chat.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDFS-2rJTcwby8d9K0PY6cw82haLpsfKOQ",
@@ -33,14 +38,19 @@ const firebaseConfig = {
     TitleDecorationComponent,
     ToastComponent,
     NavbarComponent,
-    RegisterComponent
+    RegisterComponent,
+    AhorcadoComponent,
+    MayormenorComponent,
+    ChatComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    JuegosRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

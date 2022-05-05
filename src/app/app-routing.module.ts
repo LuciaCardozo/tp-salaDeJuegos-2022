@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:"quienSoy",component:QuienSoyComponent},
   {path:"register",component:RegisterComponent},
   {path:"home",component:HomeComponent},//,canActivate:[AuthGuard]
+  {path:"juegos",loadChildren:() => import('./juegos/juegos.module').then(m => m.JuegosModule)},
   {path:'**',component:ErrorComponent}
 ];
 
