@@ -14,7 +14,7 @@ export class MayormenorComponent implements OnInit {
       texto:"Home",
       color:""
     },{
-      ruta:"/quiensoy",
+      ruta:"/quienSoy",
       texto:"Quien Soy",
       color:""
       }

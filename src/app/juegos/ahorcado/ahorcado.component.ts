@@ -13,7 +13,7 @@ export class AhorcadoComponent implements OnInit {
       texto:"Home",
       color:""
     },{
-      ruta:"/quiensoy",
+      ruta:"/quienSoy",
       texto:"Quien Soy",
       color:""
       }
