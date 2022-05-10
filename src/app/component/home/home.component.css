@@ -1,6 +1,6 @@
-.divPokemon {
+.divContainer {
     width: 80%;
-    box-shadow: 0px 0px 25px 0px #ff0000;
+    box-shadow: 0px 0px 25px 0px #882626;
     border-radius: 10px;
     display: grid;
     gap: 1rem;
@@ -9,15 +9,16 @@
     margin: 1rem;
     max-height: 55vh;
     overflow: scroll;
+    background-color: #9cd8b736;
 }
 
-.divPokemon::-webkit-scrollbar {
+.divContainer::-webkit-scrollbar {
     display: none;
 }
 
-.pokemonCard {
+.card {
     border-radius: 10%;
-    background-color: #dc3545;
+    background-color: #d85c2bab;
     width: 90%;
     margin: 1rem;
     max-width: 100%;

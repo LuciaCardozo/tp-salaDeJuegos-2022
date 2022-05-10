@@ -82,7 +82,7 @@ export class AhorcadoComponent implements OnInit {
       }
     } else {
       if(this.numAcierto == this.palabraAAdivinar.length){
-        this.mensaje = "Ganaste!!";
+        this.mensaje = " Ganaste la palabra era "+this.palabraAAdivinar+"!!";
         this.popup.style.display = "initial";
       }
       boton.estado = "btn-letra-acertada";

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class NavbarComponent implements OnInit {
   @Input() icono:any;
   @Input() titulo:any;
+  @Input() imagen:any;
   @Input() botones:any = [];
   constructor() { }
 

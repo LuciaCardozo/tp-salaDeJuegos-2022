@@ -15,8 +15,8 @@ export class HomeComponent implements OnInit {
     },
     {
       ruta:"/login",
-      texto:"Log Out",
-      color:"red"
+      texto:"",
+      color:""
     }
   ];
 

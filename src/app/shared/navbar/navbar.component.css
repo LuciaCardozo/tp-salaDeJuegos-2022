@@ -3,7 +3,8 @@
     height: 3%;
 }
 
-.contenedorNavbar{
-    border-radius: 20px;
-    background-color:rgba(224, 47, 24, 0.541);
+.nav-item{
+    font-weight: bolder;
+    font-size: 150%;
+    text-decoration: underline;
 }
